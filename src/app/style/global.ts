@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -16,6 +16,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

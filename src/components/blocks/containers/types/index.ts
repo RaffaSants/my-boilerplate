@@ -1,29 +1,29 @@
-import { ReactNode } from "react";
-import * as layoutTypes from "@/types/layout";
-import * as themeTypes from "@/types/theme"
+import { ReactNode } from 'react';
+import * as layoutTypes from '@/types/layout';
+import * as themeTypes from '@/types/theme';
 
-export type variant = 'header'|'main'|'aside'|'footer'
+export type variant = 'header' | 'main' | 'aside' | 'footer';
 
 export interface containerFlex {
-  direction?: layoutTypes.direction
-  wrap?: 'nowwrap'|'wrap'|'wrap-reverse'
+  direction?: layoutTypes.direction;
+  wrap?: 'nowwrap' | 'wrap' | 'wrap-reverse';
 }
 
 export interface containerGrid {
-  columns?: layoutTypes.columns
+  columns?: layoutTypes.columns;
   templatecolumns?: string;
-  rows?: layoutTypes.rows
+  rows?: layoutTypes.rows;
   templaterows?: string;
 }
 
 export interface containerStyleProps {
-  position?: layoutTypes.position
+  position?: layoutTypes.position;
   left?: string;
   top?: string;
   right?: string;
   bottom?: string;
-  alignx?: layoutTypes.alignX
-  aligny?: layoutTypes.alignY
+  alignx?: layoutTypes.alignX;
+  aligny?: layoutTypes.alignY;
   height?: string;
   minheight?: string;
   maxheight?: string;
@@ -38,8 +38,11 @@ export interface containerStyleProps {
   zindex?: number;
 }
 
-export interface containerProps extends containerStyleProps, containerFlex, containerGrid {
-  variant: variant
-  display: layoutTypes.display
-  children?: ReactNode
+export interface containerProps
+  extends containerStyleProps,
+    containerFlex,
+    containerGrid {
+  variant: variant;
+  display: layoutTypes.display;
+  children?: ReactNode;
 }

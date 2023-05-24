@@ -1,4 +1,4 @@
-export interface colorsBase  {
+export interface colorsBase {
   primary: string;
   secondary: string;
   tertiary?: string;

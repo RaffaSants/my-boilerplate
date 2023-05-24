@@ -1,19 +1,18 @@
-import { ContainerStyle } from "../style";
-import { headerFlex, headerGrid } from "./types";
+import { ContainerStyle } from '../style';
+import { headerFlex, headerGrid } from './types';
 
-
-export const HeaderFlex =({ children, ...rest }: headerFlex) => {
+export const HeaderFlex = ({ children, ...rest }: headerFlex) => {
   return (
-    <ContainerStyle variant='header'  display="flex" direction="row" {...rest}>
+    <ContainerStyle variant="header" display="flex" direction="row" {...rest}>
       {children}
-    </ContainerStyle >
-  )
-}
+    </ContainerStyle>
+  );
+};
 
-export const HeaderGrid =({children, ...rest }: headerGrid) => {
+export const HeaderGrid = ({ children, ...rest }: headerGrid) => {
   return (
-    <ContainerStyle variant='header'  display="grid" {...rest}>
+    <ContainerStyle variant="header" display="grid" {...rest}>
       {children}
-    </ContainerStyle >
-  )
-}
+    </ContainerStyle>
+  );
+};
