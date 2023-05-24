@@ -1,7 +1,9 @@
-import { FooterFlex } from "@/components/blocks/containers/footer";
+import { FooterFlex } from '@/components/blocks/containers/footer';
 
-export const Footer = () =>{
-  return(
-    <FooterFlex width="100vw" height="10vh" alignx="center" aligny="center"><h1>Footer</h1></FooterFlex>
-  )
-}
+export const Footer = () => {
+  return (
+    <FooterFlex width="100vw" height="10vh" alignx="center" aligny="center">
+      <h1>Footer</h1>
+    </FooterFlex>
+  );
+};
