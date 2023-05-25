@@ -1,4 +1,4 @@
-import { MainFlex } from '@/components/blocks/containers/main';
+import { MainFlex } from '@/components/containers/main';
 import { ReactNode } from 'react';
 
 export const Main = ({ children }: { children: ReactNode }) => {

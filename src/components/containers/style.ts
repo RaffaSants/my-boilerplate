@@ -1,10 +1,10 @@
 'use client'
 
 import { styled } from "styled-components";
-import { containerProps } from "./types";
+import { blockProps } from "./types";
 
 //@ts-ignore
-export const ContainerStyle = styled('div').attrs<containerProps>(({variant})=> ({as: variant}))<containerProps>`
+export const BlockStyle = styled('div').attrs<blockProps>(({variant})=> ({as: variant}))<blockProps>`
   ${({position})=> position && `position: ${position};`}
   ${({left})=> left && `left: ${left};`}
   ${({top})=> top && `top: ${top};`}

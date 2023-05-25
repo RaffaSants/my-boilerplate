@@ -1,4 +1,4 @@
-import { FooterFlex } from '@/components/blocks/containers/footer';
+import { FooterFlex } from '@/components/containers/footer';
 
 export const Footer = () => {
   return (

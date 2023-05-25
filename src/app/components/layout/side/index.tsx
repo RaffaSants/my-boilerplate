@@ -1,4 +1,4 @@
-import { SideFlex } from '@/components/blocks/containers/side';
+import { SideFlex } from '@/components/containers/side';
 
 export const Side = () => {
   return (

@@ -1,4 +1,4 @@
-import { HeaderFlex } from '@/components/blocks/containers/header';
+import { HeaderFlex } from '@/components/containers/header';
 
 export const Header = () => {
   return (

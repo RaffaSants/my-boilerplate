@@ -2,21 +2,20 @@ import { ReactNode } from 'react';
 import * as layoutTypes from '@/types/layout';
 import * as themeTypes from '@/types/theme';
 
-export type variant = 'header' | 'main' | 'aside' | 'footer';
+export type variant =
+  | 'header'
+  | 'main'
+  | 'aside'
+  | 'footer'
+  | 'article'
+  | 'section'
+  | 'address'
+  | 'audio'
+  | 'figure'
+  | 'table'
+  | 'video';
 
-export interface containerFlex {
-  direction?: layoutTypes.direction;
-  wrap?: 'nowwrap' | 'wrap' | 'wrap-reverse';
-}
-
-export interface containerGrid {
-  columns?: layoutTypes.columns;
-  templatecolumns?: string;
-  rows?: layoutTypes.rows;
-  templaterows?: string;
-}
-
-export interface containerStyleProps {
+export interface blockStyle {
   position?: layoutTypes.position;
   left?: string;
   top?: string;
@@ -38,10 +37,21 @@ export interface containerStyleProps {
   zindex?: number;
 }
 
-export interface containerProps
-  extends containerStyleProps,
-    containerFlex,
-    containerGrid {
+export interface blockFlex extends blockStyle {
+  direction?: layoutTypes.direction;
+  wrap?: 'nowwrap' | 'wrap' | 'wrap-reverse';
+  children?: ReactNode;
+}
+
+export interface blockGrid extends blockStyle {
+  columns?: layoutTypes.columns;
+  templatecolumns?: string;
+  rows?: layoutTypes.rows;
+  templaterows?: string;
+  children?: ReactNode;
+}
+
+export interface blockProps extends blockFlex, blockGrid {
   variant: variant;
   display: layoutTypes.display;
   children?: ReactNode;
